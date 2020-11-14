@@ -61,7 +61,8 @@ module.exports = (env, argv) => ({
                 loader: require.resolve('sass-loader'),
                 options: {
                   sassOptions: {
-                    outputStyle: argv.mode === 'development' ? 'expanded' : 'compressed',
+                    outputStyle: argv.mode === 'development' ?
+                      'expanded' : 'compressed',
                   },
                   sourceMap: true,
                 },
