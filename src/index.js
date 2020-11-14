@@ -1,5 +1,5 @@
 import './scss/style.scss';
 
-const test = (text) => console.log(text);
+const hello = (text) => console.log(text);
 
-test('hi');
+hello('Write your awesome code here!');

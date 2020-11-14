@@ -1,9 +1,9 @@
 module.exports = {
-  'presets': [
+  presets: [
     '@babel/preset-env',
   ],
-  "plugins": [
-    "@babel/plugin-syntax-object-rest-spread",
-    "@babel/plugin-proposal-object-rest-spread"
-  ]
+  plugins: [
+    '@babel/plugin-syntax-object-rest-spread',
+    '@babel/plugin-proposal-object-rest-spread',
+  ],
 };
