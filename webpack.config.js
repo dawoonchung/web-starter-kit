@@ -58,7 +58,6 @@ module.exports = (env, argv) => ({
                         },
                         stage: 3,
                       }),
-                      require('lost'),
                     ],
                   },
                   sourceMap: true,
