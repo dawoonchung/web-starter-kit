@@ -162,12 +162,13 @@ module.exports = (env, argv) => ({
   },
   devServer: {
     compress: true,
-    contentBase: path.resolve(__dirname, 'public'),
     hot: true,
-    inline: true,
     open: true,
     port: process.env.PORT || 3000,
-    watchContentBase: true,
+    static: {
+      directory: path.resolve(__dirname, 'public'),
+      watch: true,
+    },
   },
   devtool: argv.mode === 'development' ? 'source-map' : false,
   // Needed due to HMR error in Webpack 5.0.0-rc.1 and above.

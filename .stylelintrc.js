@@ -98,19 +98,6 @@ module.exports = {
         // CSS modules
         'composes',
         'compose-with',
-        // Lost grid
-        'lost-align',
-        'lost-center',
-        'lost-column',
-        'lost-flex-container',
-        'lost-masonry-column',
-        'lost-masonry-wrap',
-        'lost-move',
-        'lost-offset',
-        'lost-row',
-        'lost-unit',
-        'lost-utility',
-        'lost-waffle',
       ],
       // CSS modules
       ignoreSelectors: [
@@ -120,7 +107,6 @@ module.exports = {
     }],
     'scss/at-rule-no-unknown': [true, {
       ignoreAtRules: [
-        'lost', // Lost grid
         'value', // CSS modules
       ],
     }],
