@@ -1,61 +1,42 @@
 {
   "name": "web-starter-kit",
-  "version": "1.0.0",
-  "description": "Webpack configuration for ES6 + SCSS web development.",
-  "main": "index.js",
-  "author": "Da-Woon Chung",
-  "license": "MIT",
-  "dependencies": {
-    "@babel/plugin-proposal-object-rest-spread": "^7.14.7",
-    "@babel/plugin-syntax-object-rest-spread": "^7.8.3",
-    "bootstrap": "^5.0.2",
-    "sass": "^1.35.2"
+  "version": "2.0.0",
+  "description": "A simple web started template with minimum configurations.",
+  "private": true,
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "webpack --mode=development --config webpack.config.js",
+    "build": "webpack --mode=production --config webpack.config.js"
   },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dawoonchung/web-starter-kit.git"
+  },
+  "author": "Da-Woon Chung",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/dawoonchung/web-starter-kit/issues"
+  },
+  "homepage": "https://github.com/dawoonchung/web-starter-kit#readme",
   "devDependencies": {
-    "@babel/core": "^7.14.8",
-    "@babel/preset-env": "^7.14.8",
+    "@babel/core": "^7.15.5",
+    "@babel/preset-env": "^7.15.6",
     "babel-loader": "^8.2.2",
-    "clean-webpack-plugin": "^3.0.0",
-    "css-loader": "^6.2.0",
-    "eslint": "^7.31.0",
-    "eslint-config-google": "^0.14.0",
-    "eslint-config-recommended": "^4.1.0",
-    "eslint-plugin-import": "^2.23.4",
-    "file-loader": "^6.2.0",
+    "css-loader": "^6.3.0",
+    "eslint": "^7.32.0",
+    "eslint-config-airbnb-base": "^14.2.1",
+    "eslint-plugin-import": "^2.24.2",
+    "eslint-webpack-plugin": "^3.0.1",
     "html-webpack-plugin": "^5.3.2",
-    "lost": "^8.3.1",
-    "mini-css-extract-plugin": "^2.1.0",
-    "optimize-css-assets-webpack-plugin": "^6.0.1",
-    "postcss": "^8.3.5",
-    "postcss-flexbugs-fixes": "^5.0.2",
-    "postcss-loader": "^6.1.1",
-    "postcss-preset-env": "^6.7.0",
-    "postcss-safe-parser": "^6.0.0",
+    "mini-css-extract-plugin": "^2.3.0",
+    "sass": "^1.42.1",
     "sass-loader": "^12.1.0",
+    "style-loader": "^3.3.0",
     "stylelint": "^13.13.1",
     "stylelint-config-sass-guidelines": "^8.0.0",
     "stylelint-order": "^4.1.0",
-    "stylelint-scss": "^3.20.1",
-    "terser-webpack-plugin": "^5.1.4",
-    "url-loader": "^4.1.1",
-    "webpack": "^5.45.1",
-    "webpack-cli": "^4.7.2",
-    "webpack-dev-server": "^3.11.2"
-  },
-  "scripts": {
-    "start": "webpack serve --config webpack.config.js --mode development",
-    "build": "webpack --config webpack.config.js --mode production"
-  },
-  "browserslist": {
-    "production": [
-      ">0.2%",
-      "not dead",
-      "not op_mini all"
-    ]
-  },
-  "dependenciesMeta": {
-    "stylelint@13.12.0": {
-      "unplugged": true
-    }
+    "stylelint-webpack-plugin": "^3.0.1",
+    "webpack": "^5.54.0",
+    "webpack-cli": "^4.8.0"
   }
 }
